@@ -89,7 +89,7 @@ GRADIENT_PENALTY_WEIGHT = PARAMS[DATASET]['gradient_penalty_weight']
 CLS_LOSS_WEIGHT = PARAMS[DATASET]['cls_loss_weight']
 N_SAMPLES_GAN = N_UNSEEN_CLASSES * PARAMS[DATASET]['syn_num']
 
-PATH = '/content/data' if COLAB else 'C:/Users/lucar/Desktop/data'
+PATH = '/content/data' if COLAB else '../data'
 FEATURES_PATH = PATH + '/' + DATASET + '/res101.mat'
 ATTRIBUTES_PATH = PATH + '/' + DATASET + '/att_splits.mat'
 FILE_SEPARATOR = PARAMS[DATASET]['file_separator']

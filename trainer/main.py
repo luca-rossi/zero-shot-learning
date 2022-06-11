@@ -7,8 +7,6 @@ from load import load_data
 from config import *
 
 
-# TODO try using embedded classifier in GAN too?
-
 disable_eager_execution()
 features, attributes, labels, signatures, classnames = load_data()
 train_seenX, train_seenA, train_seenY = features['trainval'], attributes['trainval'], labels['trainval']
