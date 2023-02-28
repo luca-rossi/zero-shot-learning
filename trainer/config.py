@@ -3,71 +3,69 @@ GAN = True
 LOAD = True
 GZSL = True
 
-
 DATASET_CUB = 'cub'
 DATASET_AWA = 'awa'
 DATASET_SUN = 'sun'
 DATASET = DATASET_AWA
 
-
 PARAMS = {
-    DATASET_CUB: {
-        'file_separator': ' ',
-        'input_shape': 2048,
-        'n_classes': 200,
-        'n_unseen_classes': 50,
-        'n_attributes': 312,
-        'n_epochs': 70,
-        'n_epochs_cls': 25,
-        'batch_size': 64,
-        'batch_size_cls': 64,
-        'learning_rate': 0.0001,
-        'learning_rate_cls': 0.001,
-        'beta': 0.5,
-        'syn_num': 300,
-        'gradient_penalty_weight': 10,
-        'cls_loss_weight': 0.01,
-        'n_critic': 5,
-        'latent_dim': 312
-    },
-    DATASET_AWA: {
-        'file_separator': '\t',
-        'input_shape': 2048,
-        'n_classes': 50,
-        'n_unseen_classes': 10,
-        'n_attributes': 85,
-        'n_epochs': 30,
-        'n_epochs_cls': 25,
-        'batch_size': 64,
-        'batch_size_cls': 64,
-        'learning_rate': 0.00001,
-        'learning_rate_cls': 0.001,
-        'beta': 0.5,
-        'syn_num': 1800,
-        'gradient_penalty_weight': 10,
-        'cls_loss_weight': 0.01,
-        'n_critic': 5,
-        'latent_dim': 85
-    },
-    DATASET_SUN: {
-        'file_separator': '\t',
-        'input_shape': 2048,
-        'n_classes': 717,
-        'n_unseen_classes': 72,
-        'n_attributes': 102,
-        'n_epochs': 40,
-        'n_epochs_cls': 25,
-        'batch_size': 64,
-        'batch_size_cls': 64,
-        'learning_rate': 0.0002,
-        'learning_rate_cls': 0.001,
-        'beta': 0.5,
-        'syn_num': 400,
-        'gradient_penalty_weight': 10,
-        'cls_loss_weight': 0.01,
-        'n_critic': 5,
-        'latent_dim': 102
-    },
+	DATASET_CUB: {
+		'file_separator': ' ',
+		'input_shape': 2048,
+		'n_classes': 200,
+		'n_unseen_classes': 50,
+		'n_attributes': 312,
+		'n_epochs': 70,
+		'n_epochs_cls': 25,
+		'batch_size': 64,
+		'batch_size_cls': 64,
+		'learning_rate': 0.0001,
+		'learning_rate_cls': 0.001,
+		'beta': 0.5,
+		'syn_num': 300,
+		'gradient_penalty_weight': 10,
+		'cls_loss_weight': 0.01,
+		'n_critic': 5,
+		'latent_dim': 312
+	},
+	DATASET_AWA: {
+		'file_separator': '\t',
+		'input_shape': 2048,
+		'n_classes': 50,
+		'n_unseen_classes': 10,
+		'n_attributes': 85,
+		'n_epochs': 30,
+		'n_epochs_cls': 25,
+		'batch_size': 64,
+		'batch_size_cls': 64,
+		'learning_rate': 0.00001,
+		'learning_rate_cls': 0.001,
+		'beta': 0.5,
+		'syn_num': 1800,
+		'gradient_penalty_weight': 10,
+		'cls_loss_weight': 0.01,
+		'n_critic': 5,
+		'latent_dim': 85
+	},
+	DATASET_SUN: {
+		'file_separator': '\t',
+		'input_shape': 2048,
+		'n_classes': 717,
+		'n_unseen_classes': 72,
+		'n_attributes': 102,
+		'n_epochs': 40,
+		'n_epochs_cls': 25,
+		'batch_size': 64,
+		'batch_size_cls': 64,
+		'learning_rate': 0.0002,
+		'learning_rate_cls': 0.001,
+		'beta': 0.5,
+		'syn_num': 400,
+		'gradient_penalty_weight': 10,
+		'cls_loss_weight': 0.01,
+		'n_critic': 5,
+		'latent_dim': 102
+	},
 }
 
 INPUT_SHAPE = PARAMS[DATASET]['input_shape']
